@@ -74,7 +74,9 @@ this keyboard: that is why tools written for ROG mice don't see its battery.
 
 - The request and reply layout come from [G-Helper](https://github.com/seerge/g-helper)
   (`app/Peripherals/Keyboard/Models/Falchion.cs`), the Windows tool for ASUS devices.
-  This tool is an independent Linux implementation, written from scratch.
+  This tool is an independent Linux implementation, written from scratch: it contains no code from
+  G-Helper (GPL-3.0) or rogctl (AGPL-3.0), only the facts about how the keyboard communicates
+  (which bytes to send and where the answer is). That is why it can be released under the MIT license.
 - [rogctl](https://github.com/Humblemonk/rogctl) (ROG mice) and
   [rogdriver](https://github.com/rahulrajaram/rogdriver) (ROG Falchion RX Low Profile) were useful
   references for the ASUS HID protocol on Linux.

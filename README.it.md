@@ -74,7 +74,9 @@ La domanda della batteria usata dai mouse ROG (`12 07`) riceve da questa tastier
 
 - La forma della domanda e della risposta viene da [G-Helper](https://github.com/seerge/g-helper)
   (`app/Peripherals/Keyboard/Models/Falchion.cs`), il programma per Windows dei dispositivi ASUS.
-  Questo programma è una versione per Linux indipendente, scritta da zero.
+  Questo programma è una versione per Linux indipendente, scritta da zero: non contiene codice di
+  G-Helper (GPL-3.0) né di rogctl (AGPL-3.0), solo le informazioni su come comunica la tastiera
+  (quali byte mandare e dove sta la risposta). Per questo può avere la licenza MIT.
 - [rogctl](https://github.com/Humblemonk/rogctl) (mouse ROG) e
   [rogdriver](https://github.com/rahulrajaram/rogdriver) (ROG Falchion RX Low Profile) sono stati
   utili per capire il protocollo HID di ASUS su Linux.
