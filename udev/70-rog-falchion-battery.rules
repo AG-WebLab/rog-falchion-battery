@@ -1,0 +1,3 @@
+# Let the logged-in user read the battery of ASUS ROG Falchion keyboards (rog-falchion-battery)
+KERNEL=="hidraw*", ATTRS{idVendor}=="0b05", ATTRS{idProduct}=="193c", TAG+="uaccess"
+KERNEL=="hidraw*", ATTRS{idVendor}=="0b05", ATTRS{idProduct}=="193e", TAG+="uaccess"
